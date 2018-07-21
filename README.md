@@ -1,4 +1,4 @@
 data-structures
 ===============
 
-Data Structures using Java
+Data structures and algorithm using python
