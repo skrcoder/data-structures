@@ -11,5 +11,6 @@ tips:
 7. 图论算法：拓扑排序，最短路径，最小生成树，最大流算法，图的搜索算法（深度优先等等），NP类问题
 
 参考：
-https://github.com/Jack-Lee-Hiter/AlgorithmsByPython
-https://blog.csdn.net/column/details/algorithm-easyword.html
+1. https://github.com/Jack-Lee-Hiter/AlgorithmsByPython
+2. https://blog.csdn.net/column/details/algorithm-easyword.html
+
