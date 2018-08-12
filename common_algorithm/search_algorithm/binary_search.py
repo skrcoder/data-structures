@@ -1,0 +1,29 @@
+# coding=utf-8
+# Author: zhengxiongfeng
+# mail: 657019943@qq.com
+#!/usr/bin/python
+
+def binary_search(sorted_seq, val):
+    """
+    对已排序的序列，进行二分查找
+    如果存在，返回（true, index）
+    否则，返回（false，index）
+    """
+    low = 0
+    high = len(sorted_seq) - 1
+    while low <= high:
+        mid = (low + high) / 2
+        if sorted_seq[mid] == val:
+            return mid
+        elif sorted_seq[mid] > val:
+            high = mid - 1
+        else:
+            low = mid + 1
+    return None
+
+if __name__ == "__main__":
+
+    a = [1, 3, 5]
+    result = binary_search(a, 2)
+    result2 = binary_search(a, 3)
+    print result, result2
