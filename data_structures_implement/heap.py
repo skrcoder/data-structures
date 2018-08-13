@@ -57,7 +57,7 @@ class Heap:
 
     def build_heap(self, alist):
         # 建堆操作时间复杂度为O(n), 所以堆排序的时间复杂度为O(nlogn)
-        i = len(alist) // 2
+        i = len(alist) // 2 # 从中间值开始perc_down, 一直到根节点
         self.current_size = len(alist)
         self.heap_list = [0] + alist[:]
         while i > 0:
