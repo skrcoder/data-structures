@@ -6,8 +6,6 @@
 def binary_search(sorted_seq, val):
     """
     对已排序的序列，进行二分查找
-    如果存在，返回（true, index）
-    否则，返回（false，index）
     """
     low = 0
     high = len(sorted_seq) - 1
@@ -20,6 +18,18 @@ def binary_search(sorted_seq, val):
         else:
             low = mid + 1
     return None
+
+def binary_search_recursive(sorted_seq, item):
+    if len(sorted_seq)) == 0:
+        return None
+    else:
+        mid_index = len(sorted_seq) // 2
+        if sorted_seq[mid_index] == item:
+            return mid_index
+        elif sorted_seq[mid_index] > item:
+            return binary_search_recursive(sorted_seq[: mid_index], item)  
+        else:
+            return binary_search_recursive(sorted_seq[mid_index + 1:], item)
 
 if __name__ == "__main__":
 
