@@ -66,8 +66,6 @@ class Link:
             self.previous.set_next(current.get_next())
         return True
 
-
-
     def search(self, item):
         """
         查找某个值
