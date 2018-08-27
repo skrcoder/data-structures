@@ -11,15 +11,6 @@ import sys
 sys.path.append("../data_structures_implement/")
 from binary_tree import BinaryTree
 
-class TreeNode():
-    """
-    二叉树定义
-    """
-    def __init__(self, value):
-        self.value = value
-        self.left = None
-        self.right = None
-
 def pre_order_iter(root):
     if not root:
         return None
