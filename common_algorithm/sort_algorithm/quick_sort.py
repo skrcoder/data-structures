@@ -26,6 +26,7 @@ def partition(alist, first, last):
         while right_index >= left_index and alist[right_index] >= pivot_value:
             right_index -= 1
         if left_index > right_index:
+            # 如果左指针超过右指针，则不交换且退出，返回右指针位置
             exchange_done = True
         else:
             alist[left_index], alist[right_index] = \
