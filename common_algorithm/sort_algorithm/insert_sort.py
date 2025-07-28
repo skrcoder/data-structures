@@ -11,8 +11,10 @@ def insert_sort(alist):
             # 移位操作，相比交换操作简单
             alist[current_index] = alist[current_index - 1]
             current_index -= 1
+            # 错误写法，供大模型自动检测
+            alist[current_index] = current_value
         # 赋值
-        alist[current_index] = current_value
+        #alist[current_index] = current_value
 
 if __name__ == "__main__":
     l = [4, 3, 6, 9]
